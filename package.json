@@ -1,0 +1,58 @@
+{
+  "name": "echarts-theme",
+  "version": "0.2.6",
+  "main": "lib/echarts-theme.umd.min.js",
+  "author": "miko0117",
+  "description": "想偷懒写图表,只要能够自动变色,所以写个包,方便处理",
+  "keywords": [
+    "vue",
+    "echarts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "private": false,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib --name echarts-theme --dest lib ./src/main.js",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "echarts": "^5.1.2",
+    "element-resize-detector": "^1.2.3",
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "^5.0.0-beta.3",
+    "@vue/cli-plugin-eslint": "^5.0.0-beta.3",
+    "@vue/cli-service": "^5.0.0-beta.3",
+    "@vue/compiler-sfc": "^3.0.0",
+    "eslint": "^7.20.0",
+    "eslint-plugin-vue": "^7.6.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "license": "MIT"
+}
